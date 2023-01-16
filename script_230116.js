@@ -60,9 +60,45 @@
 // };
 // add1.one(5, 6);
 // ---------------------------------------------------------------
-const sumOne = {
-  one: function sum1(a, b, c) {
-    console.log(a + b + c);
+// const caculetor = {
+//   add: function (num1, num2) {
+//     console.log(num1 + num2);
+//   },
+//   minus: function (num1, num2) {
+//     console.log(num1 - num2);
+//   },
+//   division: function (num1, num2) {
+//     console.log(num1 / num2);
+//   },
+//   square: function (num1, num2) {
+//     console.log(num1 ** num2);
+//   },
+// };
+
+// caculetor.add(10, 2);
+// caculetor.minus(10, 5);
+// caculetor.division(10, 5);
+// caculetor.square(10, 3);
+// ---------------------------------------------------------------
+// const age = 96;
+// function caculetorKrAge(ageOfForeigner) {
+//   ageOfForeigner + 2;
+//   return "Hello";
+// }
+
+// const krAge = caculetorKrAge(age);
+// console.log(krAge);
+
+const caculetor = {
+  add: function (a, b) {
+    return a + b;
+  },
+  min: function (a, b) {
+    return a - b;
   },
 };
-sumOne.one(1, 2, 3);
+
+const sum = caculetor.add(6, 2);
+const min = caculetor.min(sum, 2);
+console.log(sum);
+console.log(min);
